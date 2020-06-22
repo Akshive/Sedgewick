@@ -35,10 +35,9 @@ class Rational{
         int num, den;
         void simplify(){
             int gcd = __gcd(num, den);
-            while(gcd != 1){
+            if(gcd != 1){
                 num /= gcd;
                 den /= gcd;
-                gcd = __gcd(num, den);
             }
         }
     public:
