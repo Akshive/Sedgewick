@@ -37,7 +37,7 @@ void Print(int a[], int size){
     cout<<endl;
 }
 
-void deck_sort_sim(int a[], int size){
+void dequeue_sort_sim(int a[], int size){
     bool check;
     while(1){
         check = true;
@@ -58,7 +58,7 @@ int main() {
     #endif
     
     int a[4] = {1, 4, 3, 2};
-    deck_sort_sim(a, 4);
+    dequeue_sort_sim(a, 4);
     Print(a, 4);
     return 0;
 }
